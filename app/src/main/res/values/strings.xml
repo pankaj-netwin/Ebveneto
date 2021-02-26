@@ -1,0 +1,193 @@
+<resources>
+    <!--<string name="app_name">EbVeneto</string>-->
+    <!-- Application name-->
+    <string name="app_name">Servizi EBVF</string>
+
+    <!--LOGIN SCREEN-->
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="app_riservata_a_tutti_gli_iscritti_all_ente_veneto_per_accedere_ai_servizi_on_line">App riservata a tutti gli iscritti all\'Ente Bilaterale Veneto F.V.G. per accedere ai servizi on-line</string>
+    <string name="email">email</string>
+    <string name="password">password</string>
+    <string name="accedi">ACCEDI</string>
+    <string name="hai_dimenticato_la_password">Hai dimenticato la password?</string>
+    <string name="ente_bilaterale">ENTE BILATERALE\nVENETO F.V.G.</string>
+    <string name="privacy_policy">Privacy Policy</string>
+    <string name="privacy_check_box"><u>Accetto l\'informativa</u></string>
+    <string name="privacy_not_provided">Devi accettare l\'informativa sul trattamento dei dati personali.</string>
+    <string name="close">Chiudi</string>
+    <string name="i_agree">Acconsento</string>
+    <string name="disagree">Non Acconsento</string>
+
+    <!--THANK YOU SCREEN-->
+    <string name="conferma_richiesta_nuovo_servizio">Conferma Richiesta nuovo servizio</string>
+    <string name="la_tua_e_ananta">La tua richiesta è andata a buon fine!</string>
+
+    <!--MY PROFILE SCREEN-->
+    <string name="my_profile">IL TUO PROFILO</string>
+    <string name="name">Nome</string>
+    <string name="surname">Cognome</string>
+    <string name="tax_code">Cod. fiscale</string>
+    <string name="date_of_birth">Data di nascita</string>
+    <string name="address">Indirizzo</string>
+    <string name="city">Città</string>
+    <string name="provision">Provincia</string>
+    <string name="in_order_with_payments">In regola con i versamenti</string>
+    <string name="currently_emplyoed">Attualmente impiegato(a) presso</string>
+    <string name="add_new_services">Richiedi nuovo servizio</string>
+    <string name="inserire_il_codice_iban_del_c_c_in_cui_si_desidera_ricevere_il_versamento_tramite_bonifico">Inserire il codice IBAN del c/c in cui si desidera ricevere il versamento tramite bonifico:</string>
+    <string name="il_sottoscritto_ricevuta_l_informativa_di_cui_all_art_13_e_preso_atto_dei_diritti_di_cui_all_art_7_del_decreto_legislativo_196_03_privacy_esprime_il_consenso_previsto_dall_art_23_e_26_del_citato_decreto_al_trattamento_dei_dati_che_mi_riguardano_da_parte_dell_ente_bilaterale_veneto_f_v_g_e_o_delle_societ_o_organizzazioni_legate_alla_confesercenti_per_le_finalit_istituzionali_connesse_o_strumentali_dell_ente_bilaterale_veneto_f_v_g_nonch_alla_comunicazione_dei_miei_dati_personali_nei_limiti_previsti_dalla_citata_informativa_e_quando_ci_sia_funzionale_all_esecuzione_delle_operazioni_e_dei_servizi_offerti">Il sottoscritto, ricevuta l\'informativa di cui all\'art. 13 e preso atto dei diritti di cui all\'art. 7 del decreto legislativo 196/03 (privacy), esprime il consenso previsto dall\'art. 23 e 26 del citato decreto al trattamento dei dati che mi riguardano, da parte dell\'Ente Bilaterale Veneto F.V.G. e/o delle società o organizzazioni legate alla Confesercenti per le finalità istituzionali, connesse o strumentali, dell\'Ente Bilaterale Veneto F.V.G. nonchè alla comunicazione dei miei dati personali nei limiti previsti dalla citata informativa e quando ciò sia funzionale all\'esecuzione delle operazioni e dei servizi offerti.</string>
+    <string name="invia_richiesta">invia richiesta</string>
+    <string name="yes">SI</string>
+    <string name="no">NO</string>
+    <string name="add">add services</string>
+
+    <!--Validation messages on Login screen-->
+    <string name="please_enter_email">Inserisci il tuo indirizzo di email</string>
+    <string name="please_enter_password">Inserisci la tua password</string>
+
+    <!--Emplyoee Company Activity Screen-->
+    <string name="personal_details_members">DATI ANAGRAFICI ISCRITTO</string>
+    <string name="email_caps">Email</string>
+    <string name="telephone">Telefono</string>
+    <string name="cellular">Cellulare</string>
+    <string name="company_personal_data">DATI ANAGRAFICI AZIENDA</string>
+    <string name="business_name">Ragione sociale</string>
+    <string name="vat_number">Partita IVA</string>
+    <string name="cod_tax_company">Cod. fiscale Azienda</string>
+    <string name="registered_office_address">Indirizzo (sede legale)</string>
+    <string name="cap">Cap</string>
+    <string name="common">Comune</string>
+    <string name="company_provincia">Provincia</string>
+    <string name="fax">Fax</string>
+    <string name="company_email">Email</string>
+    <string name="company_contact">Referente aziendale</string>
+    <string name="business_area">Settore attività</string>
+    <string name="attached_document">Documenti allegati</string>
+    <string name="pay_packet">Busta paga</string>
+    <string name="year_and_month">Mese e Anno Busta paga</string>
+    <string name="carica">CARICA</string>
+    <string name="invoice_or_receipt">Fattura/Ricevuta nr.1</string>
+    <string name="invoice_or_receipt_dynamic">Fattura/Ricevuta nr.</string>
+    <string name="add_new_voice">Aggiungi nuova fattura</string>
+
+
+    <!--Forgot Password Screen-->
+    <string name="reset_password">Resetta la password</string>
+    <string name="do_you_want_to_exit_application">Vuoi chiudere l\'app?</string>
+    <string name="no_internet_connection">Manca una connessione ad internet</string>
+    <string name="verify_your_information">verifica i tuoi dati</string>
+    <string name="request_a_new_service">richiedi un nuovo servizio</string>
+    <string name="logout_message">Volete effettuare il logout?</string>
+    <string name="read">Clicca per procedere</string>
+    <string name="upload_image">Upload File</string>
+    <string name="gallery">Gallery</string>
+    <string name="camera">Camera</string>
+    <string name="doc_file">Doc File</string>
+    <string name="pdf_file">PDF</string>
+    <string name="failed_please_pick_image">Fallito! Si prega di scegliere l\'immagine.</string>
+    <string name="select_image_from_device_folders">Seleziona immagine da cartelle del dispositivo.</string>
+    <string name="photo_was_saved_successfully">Documento caricato con successo</string>
+    <string name="add_new_voices">Aggiungi</string>
+
+    <string name="service_info">Scegliere se ricevere informazioni sui servizi e sulle attività dell\'EBVF</string>
+    <string name="sms">Scegliere se ricevere via SMS o e-mail notifica di pagamentoi</string>
+    <string name="upto_10_views">È possibile aggiungere viste solo fino a 10</string>
+    <!-- <string name="email_has_multiple_access">L\'email inserita è presente in più tabelle. Scegli con che tipologia di utente vuoi loggarti.</string>-->
+    <string name="email_has_multiple_access">Ente bilaterale del CCNL del commercio e del turismo, del Veneto e del Friuli Venezia Giulia.</string>
+    <string name="ll_scotto">Il sottoscritto</string>
+    <string name="qualifiaction">Qualifica</string>
+    <string name="livello">Livello</string>
+    <string name="ccnl">CCNL</string>
+    <string name="further_information">Altre Informazioni</string>
+
+    <string name="company_dropdown">Seleziona dal menu a tendina l\'azienda che desideri.</string>
+    <!--<string name="company_dropdown">Seleziona dal menu \na tendina l\'azienda che desideri.</string>-->
+    <string name="birth_place">Luogo di nascita</string>
+    <string name="child_details">DATI ANAGRAFICI DEL FIGLIO/A O PARENTE DI PRIMO GRADO</string>
+    <string name="choose_profile">Scegli un profilo già registrato o creane uno nuovo</string>
+    <string name="parentela">Parentela</string>
+    <string name="parentela_cognome">Cognome</string>
+    <string name="parentela_nome">Nome</string>
+    <string name="parentela_birthplace">Luogo di nascita</string>
+    <string name="select">Selezionare</string>
+    <string name="parentela_birthdate">Data di nascita</string>
+    <string name="country_of_birth">Provincia di nascita</string>
+    <string name="select_country_of_birth">Selezionare Provincia di nascita</string>
+    <string name="codice_fiscale">Codice Fiscale</string>
+    <string name="ci_file">Carta d\'identità</string>
+    <string name="ci_file_calendar">Scadenza Carta d\'identità</string>
+    <string name="visura_file">Visura camerale</string>
+    <string name="visura_calendar">Data Visura camerale</string>
+    <string name="lista_dependenti">Lista dipendenti</string>
+    <string name="please_enter_iban">Inserire il campo IBAN</string>
+    <string name="please_enter_course_title">Scegliere</string>
+    <string name="please_select_anno_mese">Scegliere Anno e mese busta paga</string>
+    <string name="please_enter_parentela">Inserire il campo Parentela</string>
+    <string name="please_enter_parentelacognome">Inserire il campo Cognome</string>
+    <string name="please_enter_parentelanome">Inserire il campo Nome</string>
+    <string name="please_enter_parentelabirthplace">Inserire il campo Luogo di nascita</string>
+    <string name="please_enter_parentelabirthdate">Inserire il campo Data di nascita</string>
+    <string name="please_enter_cof">Inserire il campo Codice Fiscale</string>
+    <string name="please_enter_birthdropdown">Inserire il campo Provincia di nascita</string>
+    <string name="register">Registrati</string>
+
+    <!--Added by Mayur-->
+    <!--Change Password Screen-->
+    <string name="password_esistente">password esistente</string>
+    <string name="nuova_password">nuova password</string>
+    <string name="conferma_password">conferma password</string>
+    <string name="cambia_la_password">Cambia la password</string>
+    <string name="please_enter_existing_password">Per favore, inserisci la  password di exi</string>
+    <string name="please_enter_new_password">Per favore, inserisci la  password</string>
+    <string name="please_enter_confirm_password">Per favore, inserisci la Conferma password</string>
+
+    <!--Home Screen-->
+    <string name="euro">€</string>
+
+    <!--Edit versamenti Screen-->
+    <string name="piva">Piva</string>
+    <string name="codice_inps_prevalente">Codice INPS prevalente</string>
+    <string name="versamenti_mensili">Versamenti Mensili</string>
+    <string name="mag">Mag</string>
+    <string name="apr">Apr</string>
+    <string name="mar">Mar</string>
+    <string name="feb">Feb</string>
+    <string name="gen">Gen</string>
+    <string name="giu">Giu</string>
+    <string name="ago">Ago</string>
+    <string name="lug">Lug</string>
+    <string name="set">Set</string>
+    <string name="ott">Ott</string>
+    <string name="salva">Salva</string>
+    <string name="numero_richieste">Numero richieste</string>
+    <string name="numero_erogazioni">Numero erogazioni</string>
+    <string name="elenco_sedi">Elenco Sedi</string>
+    <string name="nome">Nome</string>
+    <string name="indirizzo">Indirizzo</string>
+    <string name="tipo">Tipo</string>
+    <string name="fonte">Fonte</string>
+    <string name="nov">Nov</string>
+    <string name="dic">Dic</string>
+    <string name="please_try_again">Oops! Qualcosa è andato storto! Riprova</string>
+    <string name="modifica_i_dati">Modifica I Dati</string>
+    <string name="regione_sociale">Regione sociale</string>
+    <string name="partita_iva">Partita IVA</string>
+    <string name="budget_residuo_company">Somme percepite dai dipendenti</string>
+    <string name="budget_residuo_per_l_anno_year">Budget residuo per l\'anno %1$s</string>
+    <string name="somme_percepite_nell_anno_year">Somme percepite nell\'anno %1$s</string>
+    <string name="servizi_aziendali">Servizi aziendali</string>
+    <string name="resoconto_dipendenti">Resoconto dipendenti</string>
+    <string name="nessun_record_trovato">Nessun record trovato.</string>
+
+        <!--Rate This app Strings. Added by sanket-->
+    <string name="rta_dialog_title">Valuta quest\'app</string>
+    <string name="rta_dialog_message"> Se ti è piaciuto usare quest\'app, potresti prenderti un attimo per valutarla? Ci vorrà meno di un minuto. Grazie per il tuo prezioso tempo.</string>
+    <string name="rta_dialog_ok">Valuta ora</string>
+    <string name="rta_dialog_cancel">Valuta dopo</string>
+    <string name="rta_dialog_no">No, grazie</string>
+    <string name="oops">Riprova</string>
+    <string name="later"> più tardi </string>
+    <string name="update"> aggiorna </string>
+    <string name="skip"> salta </string>
+
+</resources>

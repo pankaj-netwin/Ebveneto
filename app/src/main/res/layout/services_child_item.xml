@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    android:orientation="vertical">
+
+    <WebView
+        android:id="@+id/wvchildItem"
+        style="@style/MediumBlackText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:padding="5dp" />
+
+
+    <!-- <com.ebveneto.custom_views.CustomTextViewLight
+         android:id="@+id/tvChildItem"
+         style="@style/MediumBlackText"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:layout_marginLeft="10dp"
+         android:layout_marginRight="10dp"
+         android:padding="5dp"
+         android:textAppearance="?android:attr/textAppearanceSmall" />-->
+
+    <LinearLayout
+        android:id="@+id/llSendInquiry"
+        style="@style/CustomProceedButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="15dp"
+        android:background="@drawable/blue_button_rounded_corners">
+
+        <com.ebveneto.custom_views.CustomTextViewLight
+            android:id="@+id/tvReadMore"
+            style="@style/CustomMediumBlueText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="@string/read"
+            android:textColor="@color/colorBlack" />
+    </LinearLayout>
+
+</LinearLayout>

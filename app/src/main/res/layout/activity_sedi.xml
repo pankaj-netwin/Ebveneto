@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.SediActivity"
+    android:background="@color/colorWhite">
+
+    <LinearLayout android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <com.ebveneto.custom_views.CustomTextViewBold
+            style="@style/LargeBlueText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:textAllCaps="true"
+            android:text="@string/elenco_sedi" />
+
+        <com.ebveneto.custom_views.CustomTextViewBold
+            style="@style/MediumBlueText"
+            android:textColor="@color/colorHomeTitleBlue"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Sede legale"
+            android:background="@color/colorPrimary"
+         />
+
+        <com.ebveneto.custom_views.CustomTextViewLight
+            android:id="@+id/tvSedeAddress"
+            style="@style/MediumBlackText"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+          android:gravity="center_vertical"
+            android:drawablePadding="10dp"
+            android:drawableLeft="@mipmap/ic_icons_location"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:background="@color/colorGreyFaint"
+        />
+
+        <com.ebveneto.custom_views.CustomTextViewBold
+            style="@style/MediumBlueText"
+            android:textColor="@color/colorHomeTitleBlue"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Filiali"
+            android:background="@color/colorPrimary"
+            />
+
+
+        <com.ebveneto.widgets.StaticListView
+            android:id="@+id/lvAddess"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorGreyFaint"
+            android:dividerHeight="0.7dp"/>
+
+        <com.ebveneto.custom_views.CustomTextViewBold
+            style="@style/MediumBlackText"
+            android:id="@id/tvEmpty"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Nessuna Sede inserita"
+
+            />
+
+    </LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" group="ebveneto/app" />
+      <module fileurl="file://$PROJECT_DIR$/ebveneto.iml" filepath="$PROJECT_DIR$/ebveneto.iml" group="ebveneto" />
+      <module fileurl="file://$PROJECT_DIR$/scanlibrary/scanlibrary.iml" filepath="$PROJECT_DIR$/scanlibrary/scanlibrary.iml" group="ebveneto/scanlibrary" />
+      <module fileurl="file://$PROJECT_DIR$/stickyLibrary/stickyLibrary.iml" filepath="$PROJECT_DIR$/stickyLibrary/stickyLibrary.iml" group="ebveneto/stickyLibrary" />
+    </modules>
+  </component>
+</project>

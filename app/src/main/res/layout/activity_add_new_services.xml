@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    android:orientation="vertical">
+
+
+
+    <com.ebveneto.custom_views.CustomTextViewBold
+        android:id="@+id/tvAddNewService"
+        style="@style/LargeBlueText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/add_new_services" />
+
+    <ExpandableListView
+        android:id="@+id/simpleExpandableListView"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/tvAddNewService"
+        android:childDivider="@color/colorGrey"
+        android:divider="@color/colorGrey"
+        android:layout_marginTop="5dp"
+        android:groupIndicator="@color/colorTransparent"
+        android:dividerHeight="2dp" />
+
+</RelativeLayout>

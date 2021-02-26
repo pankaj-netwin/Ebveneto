@@ -1,0 +1,19 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+
+    <!--  &lt;!&ndash;font size for textview&ndash;&gt;
+      <dimen name="very_small_text_size">12sp</dimen>
+      <dimen name="small_text_size">14sp</dimen>
+      <dimen name="medium_text_size">16sp</dimen>
+      <dimen name="large_text_size">18sp</dimen>
+      <dimen name="extra_large_text_size">20sp</dimen>-->
+    <dimen name="action_bar_height">48dp</dimen>
+    <dimen name="date_width">105dp</dimen>
+    <dimen name="IBAN_width">320dp</dimen>
+
+    <!--font size for textview-->
+    <dimen name="very_small_text_size">14sp</dimen>
+    <dimen name="small_text_size">16sp</dimen>
+    <dimen name="medium_text_size">18sp</dimen>
+    <dimen name="large_text_size">20sp</dimen>
+</resources>

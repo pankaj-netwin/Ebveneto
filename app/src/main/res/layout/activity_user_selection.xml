@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_user_selection"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    tools:context="com.ebveneto.activities.UserSelectionActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/ivEbvLogo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="30dp"
+            android:contentDescription="@null"
+            android:src="@drawable/applogonew" />
+
+        <com.ebveneto.custom_views.CustomLogoTextView
+            style="@style/MediumBlackText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:gravity="center"
+            android:text="@string/ente_bilaterale"
+            android:visibility="gone"
+            android:textStyle="bold" />
+
+        <com.ebveneto.custom_views.CustomTextViewLight
+            style="@style/LargeBlackText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:gravity="center"
+            android:text="@string/email_has_multiple_access" />
+
+       <!-- <com.ebveneto.custom_views.CustomTextViewBold
+            style="@style/LargeBlueText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:text="@string/select_the_option" />-->
+
+
+        <LinearLayout
+            android:id="@+id/btnEmployees"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center">
+
+            <ImageView android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/profile"/>
+
+            <com.ebveneto.custom_views.CustomTextViewBold
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="SERVIZI ALLA PERSONA"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:layout_marginTop="15dp"
+                android:textColor="@color/colorHomeTitleBlue"/>
+
+            </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/btnCompanies"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center">
+
+            <ImageView android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:src="@mipmap/group_people"/>
+
+            <com.ebveneto.custom_views.CustomTextViewBold
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="SERVIZI ALL'IMPRESA"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:layout_marginTop="15dp"
+                android:textColor="@color/colorHomeTitleBlue"/>
+
+        </LinearLayout>
+
+       <!-- <LinearLayout
+            android:id="@+id/btnConsultancy"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center">
+
+            <ImageView android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:src="@mipmap/sedi"/>
+
+            <com.ebveneto.custom_views.CustomTextViewBold
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="CONSULENTI DEL LAVORO"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:layout_marginTop="15dp"
+                android:textColor="@color/colorHomeTitleBlue"/>
+
+        </LinearLayout>-->
+
+
+       <!-- <Button
+            android:id="@+id/btnEmployees"
+            style="@style/CustomWelcomeButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="20dp"
+            android:layout_weight="1"
+            android:textStyle="bold"
+            android:background="@drawable/blue_button_rounded_corners"
+            android:text="@string/emplyoees" />-->
+
+       <!-- <Button
+            android:id="@+id/btnCompanies"
+            style="@style/CustomWelcomeButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="20dp"
+            android:layout_weight="1"
+            android:textStyle="bold"
+            android:background="@drawable/blue_button_rounded_corners"
+            android:text="@string/company" />-->
+
+       <!-- <Button
+            android:id="@+id/btnConsultancy"
+            style="@style/CustomWelcomeButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="20dp"
+            android:layout_weight="1"
+            android:textStyle="bold"
+            android:background="@drawable/blue_button_rounded_corners"
+            android:text="@string/company" />-->
+
+       <!-- <Button
+            android:id="@+id/btnConsultant"
+            style="@style/CustomWelcomeButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="20dp"
+            android:layout_weight="1"
+            android:background="@drawable/blue_button_rounded_corners"
+            android:text="@string/consultant" />-->
+
+    </LinearLayout>
+</LinearLayout>

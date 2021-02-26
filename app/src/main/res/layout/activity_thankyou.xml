@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/activity_thankyou"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite">
+
+    <com.ebveneto.custom_views.CustomTextViewBold
+        style="@style/LargeBlueText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="20dp"
+        android:padding="20dp"
+        android:textAllCaps="true"
+        android:text="@string/conferma_richiesta_nuovo_servizio"
+        />
+
+    <com.ebveneto.custom_views.CustomTextViewLight
+        style="@style/LargeBlackText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:layout_centerInParent="true"
+        android:lineSpacingExtra="10dp"
+        android:paddingBottom="50dp"
+        android:text="@string/la_tua_e_ananta"
+        />
+</RelativeLayout>

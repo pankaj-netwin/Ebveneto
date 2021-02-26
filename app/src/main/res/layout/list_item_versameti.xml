@@ -1,0 +1,577 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/llVersameti"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:id="@+id/rlEdit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorGrey"
+        android:paddingLeft="15dp"
+        android:paddingTop="5dp"
+        android:paddingRight="15dp"
+        android:paddingBottom="5dp">
+
+        <com.ebveneto.custom_views.CustomTextViewBold
+            android:id="@+id/tvYear"
+            style="@style/SmallBlackText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:drawableLeft="@mipmap/calendar"
+            android:drawablePadding="10dp"
+            android:gravity="center_vertical"
+            android:text="2017" />
+
+        <com.ebveneto.custom_views.CustomTextViewBold
+            android:id="@+id/tvName"
+            style="@style/SmallBlackText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvYear"
+            android:layout_centerInParent="false"
+            android:gravity="center_vertical"
+
+            android:text="asdasd" />
+
+        <ImageView
+            android:id="@+id/ivEdit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:src="@mipmap/edit" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorWhite"
+        android:orientation="horizontal"
+        android:weightSum="9">
+
+
+        <!-- String monthArray[] = {"GEN",
+        "FEB",
+        "MAR",
+        "APR",
+        "MAG",
+        "GIU",
+        "LUG",
+        "AGO",
+        "SET",
+        "OTT",
+        "NOV",
+        "DIC"};-->
+        <!--1st element-->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:background="@color/colorGreyFaint"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <com.ebveneto.custom_views.CustomTextViewBold
+                android:id="@+id/tvMonth1"
+                style="@style/SmallBlueText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:text="GEN" />
+
+            <com.ebveneto.custom_views.CustomTextViewLight
+                android:id="@+id/tvValue1"
+                style="@style/SmallBlackText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:paddingBottom="4dp"
+                android:text="122" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="3dp"
+                android:background="@color/colorWhite" />
+
+        </LinearLayout>
+
+        <!--2nd element-->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:background="@color/colorGreyFaint"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <com.ebveneto.custom_views.CustomTextViewBold
+                android:id="@+id/tvMonth2"
+                style="@style/SmallBlueText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:text="FEB" />
+
+            <com.ebveneto.custom_views.CustomTextViewLight
+                android:id="@+id/tvValue2"
+                style="@style/SmallBlackText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:paddingBottom="4dp"
+                android:text="122" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="3dp"
+                android:background="@color/colorWhite" />
+
+        </LinearLayout>
+
+        <!--3nd element-->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:background="@color/colorGreyFaint"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <com.ebveneto.custom_views.CustomTextViewBold
+                android:id="@+id/tvMonth3"
+                style="@style/SmallBlueText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:text="MAR" />
+
+            <com.ebveneto.custom_views.CustomTextViewLight
+                android:id="@+id/tvValue3"
+                style="@style/SmallBlackText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:paddingBottom="4dp"
+                android:text="122" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="3dp"
+                android:background="@color/colorWhite" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorWhite"
+        android:orientation="horizontal"
+        android:weightSum="9">
+
+
+        <!-- String monthArray[] = {"GEN",
+        "FEB",
+        "MAR",
+        "APR",
+        "MAG",
+        "GIU",
+        "LUG",
+        "AGO",
+        "SET",
+        "OTT",
+        "NOV",
+        "DIC"};-->
+        <!--4th element-->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:background="@color/colorGreyFaint"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <com.ebveneto.custom_views.CustomTextViewBold
+                android:id="@+id/tvMonth4"
+                style="@style/SmallBlueText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:text="APR" />
+
+            <com.ebveneto.custom_views.CustomTextViewLight
+                android:id="@+id/tvValue4"
+                style="@style/SmallBlackText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:paddingBottom="4dp"
+                android:text="122" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="3dp"
+                android:background="@color/colorWhite" />
+
+        </LinearLayout>
+
+        <!--5th element-->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:background="@color/colorGreyFaint"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <com.ebveneto.custom_views.CustomTextViewBold
+                android:id="@+id/tvMonth5"
+                style="@style/SmallBlueText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:text="MAG" />
+
+            <com.ebveneto.custom_views.CustomTextViewLight
+                android:id="@+id/tvValue5"
+                style="@style/SmallBlackText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:paddingBottom="4dp"
+                android:text="122" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="3dp"
+                android:background="@color/colorWhite" />
+
+        </LinearLayout>
+
+        <!--6th element-->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:background="@color/colorGreyFaint"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <com.ebveneto.custom_views.CustomTextViewBold
+                android:id="@+id/tvMonth6"
+                style="@style/SmallBlueText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:text="GIU" />
+
+            <com.ebveneto.custom_views.CustomTextViewLight
+                android:id="@+id/tvValue6"
+                style="@style/SmallBlackText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:paddingBottom="4dp"
+                android:text="122" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="3dp"
+                android:background="@color/colorWhite" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorWhite"
+        android:orientation="horizontal"
+        android:weightSum="9">
+
+
+        <!-- String monthArray[] = {"GEN",
+        "FEB",
+        "MAR",
+        "APR",
+        "MAG",
+        "GIU",
+        "LUG",
+        "AGO",
+        "SET",
+        "OTT",
+        "NOV",
+        "DIC"};-->
+        <!--7th element-->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:background="@color/colorGreyFaint"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <com.ebveneto.custom_views.CustomTextViewBold
+                android:id="@+id/tvMonth7"
+                style="@style/SmallBlueText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:text="LUG" />
+
+            <com.ebveneto.custom_views.CustomTextViewLight
+                android:id="@+id/tvValue7"
+                style="@style/SmallBlackText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:paddingBottom="4dp"
+                android:text="122" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="3dp"
+                android:background="@color/colorWhite" />
+
+        </LinearLayout>
+
+        <!--8th element-->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:background="@color/colorGreyFaint"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <com.ebveneto.custom_views.CustomTextViewBold
+                android:id="@+id/tvMonth8"
+                style="@style/SmallBlueText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:text="AGO" />
+
+            <com.ebveneto.custom_views.CustomTextViewLight
+                android:id="@+id/tvValue8"
+                style="@style/SmallBlackText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:paddingBottom="4dp"
+                android:text="122" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="3dp"
+                android:background="@color/colorWhite" />
+
+        </LinearLayout>
+
+        <!--9th element-->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:background="@color/colorGreyFaint"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <com.ebveneto.custom_views.CustomTextViewBold
+                android:id="@+id/tvMonth9"
+                style="@style/SmallBlueText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:text="SET" />
+
+            <com.ebveneto.custom_views.CustomTextViewLight
+                android:id="@+id/tvValue9"
+                style="@style/SmallBlackText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:paddingBottom="4dp"
+                android:text="122" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="3dp"
+                android:background="@color/colorWhite" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorWhite"
+        android:orientation="horizontal"
+        android:weightSum="9">
+
+
+        <!-- String monthArray[] = {"GEN",
+        "FEB",
+        "MAR",
+        "APR",
+        "MAG",
+        "GIU",
+        "LUG",
+        "AGO",
+        "SET",
+        "OTT",
+        "NOV",
+        "DIC"};-->
+        <!--10th element-->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:background="@color/colorGreyFaint"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <com.ebveneto.custom_views.CustomTextViewBold
+                android:id="@+id/tvMonth10"
+                style="@style/SmallBlueText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:text="OTT" />
+
+            <com.ebveneto.custom_views.CustomTextViewLight
+                android:id="@+id/tvValue10"
+                style="@style/SmallBlackText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:paddingBottom="4dp"
+                android:text="122" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="3dp"
+                android:background="@color/colorWhite" />
+
+        </LinearLayout>
+
+        <!--11th element-->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:background="@color/colorGreyFaint"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <com.ebveneto.custom_views.CustomTextViewBold
+                android:id="@+id/tvMonth11"
+                style="@style/SmallBlueText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:text="NOV" />
+
+            <com.ebveneto.custom_views.CustomTextViewLight
+                android:id="@+id/tvValue11"
+                style="@style/SmallBlackText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:paddingBottom="4dp"
+                android:text="122" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="3dp"
+                android:background="@color/colorWhite" />
+
+        </LinearLayout>
+
+        <!--9th element-->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:background="@color/colorGreyFaint"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <com.ebveneto.custom_views.CustomTextViewBold
+                android:id="@+id/tvMonth12"
+                style="@style/SmallBlueText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:text="DIC" />
+
+            <com.ebveneto.custom_views.CustomTextViewLight
+                android:id="@+id/tvValue12"
+                style="@style/SmallBlackText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:paddingBottom="4dp"
+                android:text="122" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="3dp"
+                android:background="@color/colorWhite" />
+
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">ScanLibrary</string>
+    <string name="scanning">Scanning</string>
+    <string name="done">Avanti</string>
+    <string name="scan">Avanti</string>
+    <string name="cantCrop">Impossibile tagliare l\'immagine, cambiare i punti</string>
+    <string name="ok">Ok</string>
+    <string name="loading">Loading</string>
+    <string name="applying_filter">Applying filter</string>
+
+    <!--<string name="low_memory">Poca memoria</string>-->
+
+  <!--  <string name="low_memory">Low Memory</string>-->
+
+   <!-- <string name="low_memory_message">Your phone is low on memory, you may feel some lags while editing images.</string>-->
+    <!--<string name="low_memory_message">Il telefono non ha molta memoria, potrebbe impiegare molto tempo per la modifica delle immagini.</string>-->
+    <!--Added by sanket on 15 Feb 2019-->
+    <string name="low_memory">Avviso</string>
+    <string name="low_memory_message">La modifica delle immagini è un processo che potrebbe richiedere un po\' di tempo, in base alla memoria del dispositivo.</string>
+</resources>

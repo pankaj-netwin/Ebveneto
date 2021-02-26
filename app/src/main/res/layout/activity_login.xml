@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_login"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorWhite"
+    tools:context="com.ebveneto.activities.LoginActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="30dp"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/ivEbvLogo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="30dp"
+            android:contentDescription="@null"
+            android:src="@drawable/applogonew" />
+
+        <com.ebveneto.custom_views.CustomLogoTextView
+            style="@style/MediumBlackText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/ente_bilaterale"
+            android:visibility="gone"
+            android:textStyle="bold" />
+
+        <com.ebveneto.custom_views.CustomTextViewLight
+            style="@style/MediumBlackText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:text="@string/app_riservata_a_tutti_gli_iscritti_all_ente_veneto_per_accedere_ai_servizi_on_line" />
+
+        <EditText
+            android:id="@+id/etEmail"
+            style="@style/CustomEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textCursorDrawable="@drawable/cursor_drawable"
+            android:background="@drawable/grey_color_background_shapes"
+            android:inputType="textEmailAddress"
+            android:hint="@string/email" />
+
+        <EditText
+            android:id="@+id/etPassword"
+            style="@style/CustomEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textCursorDrawable="@drawable/cursor_drawable"
+            android:background="@drawable/grey_color_background_shapes"
+            android:inputType="textPassword"
+            android:hint="@string/password" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+            >
+            <androidx.appcompat.widget.AppCompatCheckBox
+                android:id="@+id/privacyCheckBox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@drawable/checkbox_selector"
+                android:button="@null" />
+
+            <TextView
+                android:id="@+id/tvPrivacyPolicy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/privacy_check_box"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10dp"
+                style="@style/LargeBlackText"
+                android:textStyle="normal"
+                />
+
+        </LinearLayout>
+
+
+        <Button
+            android:id="@+id/btnLogin"
+            style="@style/CustomButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/blue_button_rounded_corners"
+            android:text="@string/accedi" />
+
+        <Button
+            android:id="@+id/btnRegister"
+            style="@style/CustomButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/blue_button_rounded_corners"
+            android:text="@string/register" />
+
+        <com.ebveneto.custom_views.CustomTextViewLight
+            android:id="@+id/tvForgotPassword"
+            style="@style/MediumBlackText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="30dp"
+            android:gravity="center"
+            android:padding="10dp"
+            android:visibility="gone"
+            android:text="@string/hai_dimenticato_la_password" />
+    </LinearLayout>
+</ScrollView>

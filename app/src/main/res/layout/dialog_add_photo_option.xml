@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:minWidth="350dp"
+    android:layout_height="wrap_content"
+    android:background="@color/colorTransperentBlack"
+    android:orientation="vertical">
+
+
+    <com.ebveneto.custom_views.CustomTextViewBold
+        android:id="@+id/tvUploadImage"
+        style="@style/LargeWhiteText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:padding="10dp"
+        android:text="@string/upload_image"
+         />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal"
+        >
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center_horizontal"
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/ivCamera"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@mipmap/camera_icon"
+                android:gravity="center"
+                android:layout_marginTop="15dp"
+                />
+
+            <com.ebveneto.custom_views.CustomTextViewBold
+                android:id="@+id/tvCamera"
+                style="@style/LargeWhiteText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="15dp"
+                android:text="@string/camera"
+                />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center_horizontal"
+            android:layout_weight="1"
+            >
+
+            <ImageView
+                android:id="@+id/ivGallery"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@mipmap/gallary_icon"
+                android:gravity="center"
+                android:layout_marginTop="15dp"
+                />
+
+            <com.ebveneto.custom_views.CustomTextViewBold
+                android:id="@+id/tvGallery"
+                style="@style/LargeWhiteText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="15dp"
+                android:text="@string/gallery"
+                />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal"
+        >
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center_horizontal"
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/ivPdfFile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@mipmap/pdf_icon"
+                android:gravity="center"
+                android:layout_marginTop="15dp"
+                />
+
+            <com.ebveneto.custom_views.CustomTextViewBold
+                android:id="@+id/tvPdfFile"
+                style="@style/LargeWhiteText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="15dp"
+                android:text="@string/pdf_file"
+                />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/documentLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center_horizontal"
+            android:layout_weight="1"
+            >
+
+            <ImageView
+                android:id="@+id/ivDocFile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@mipmap/doc_icon"
+                android:gravity="center"
+                android:layout_marginTop="15dp"
+                />
+
+            <com.ebveneto.custom_views.CustomTextViewBold
+                android:id="@+id/tvDocFile"
+                style="@style/LargeWhiteText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="15dp"
+                android:text="@string/doc_file"
+                />
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+</LinearLayout>

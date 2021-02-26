@@ -1,0 +1,453 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/colorWhite">
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorWhite"
+        android:orientation="vertical"
+        >
+
+        <RelativeLayout
+            android:id="@+id/rlEdit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorGrey"
+            android:paddingBottom="5dp"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:paddingTop="5dp"
+            >
+
+            <com.ebveneto.custom_views.CustomTextViewBold
+                android:id="@+id/tvYear"
+                style="@style/SmallBlackText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:drawableLeft="@mipmap/calendar"
+                android:drawablePadding="10dp"
+                android:gravity="center_vertical"
+                android:text="2017"
+                />
+
+            <com.ebveneto.custom_views.CustomTextViewBold
+                android:id="@+id/tvName"
+                style="@style/SmallBlackText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:gravity="center_vertical"
+                android:text="asdasd"
+                />
+        </RelativeLayout>
+
+        <com.ebveneto.custom_views.CustomTextViewLight
+            style="@style/SmallBlueText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:text="@string/codice_fiscale"
+            />
+
+        <EditText
+            android:id="@+id/etCodiceFiscale"
+            style="@style/SmallBlackText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/grey_color_background_shapes"
+            android:hint="@string/codice_fiscale"
+            android:padding="7dp"
+            android:textColorHint="@color/colorBlack"
+            android:textCursorDrawable="@drawable/cursor_drawable"/>
+
+        <com.ebveneto.custom_views.CustomTextViewLight
+            style="@style/SmallBlueText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:text="@string/piva"
+            />
+
+        <EditText
+            android:id="@+id/etPiva"
+            style="@style/SmallBlackText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/grey_color_background_shapes"
+            android:hint="@string/piva"
+            android:padding="7dp"
+            android:textColorHint="@color/colorBlack"
+            android:textCursorDrawable="@drawable/cursor_drawable"/>
+
+        <com.ebveneto.custom_views.CustomTextViewLight
+            style="@style/SmallBlueText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:text="@string/codice_inps_prevalente"
+            />
+
+        <EditText
+            android:id="@+id/etCodiceINPSPrevalente"
+            style="@style/SmallBlackText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/grey_color_background_shapes"
+            android:hint="@string/codice_inps_prevalente"
+            android:padding="7dp"
+            android:textColorHint="@color/colorBlack"
+            android:textCursorDrawable="@drawable/cursor_drawable"/>
+
+
+        <CheckBox
+            android:id="@+id/cbEbvVersamenti"
+            style="@style/SmallBlueText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="15dp"
+            android:button="@drawable/checkbox_selector_entry"
+            android:paddingLeft="10dp"
+            android:paddingRight="15dp"
+            android:text="In regola con i versamenti"
+            />
+
+        <com.ebveneto.custom_views.CustomTextViewBold
+            style="@style/SmallWhiteText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:background="@color/colorGrayDark"
+            android:paddingBottom="5dp"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:paddingTop="5dp"
+            android:text="@string/versamenti_mensili"
+            />
+
+
+        <com.ebveneto.custom_views.CustomTextViewLight
+            style="@style/SmallBlueText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:text="@string/gen"
+            />
+
+        <EditText
+            android:id="@+id/etJan"
+            style="@style/SmallBlackText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/grey_color_background_shapes"
+            android:hint="@string/gen"
+            android:padding="7dp"
+            android:textColorHint="@color/colorBlack"
+            android:textCursorDrawable="@drawable/cursor_drawable"/>
+
+        <com.ebveneto.custom_views.CustomTextViewLight
+            style="@style/SmallBlueText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:text="@string/feb"
+            />
+
+        <EditText
+            android:id="@+id/etFeb"
+            style="@style/SmallBlackText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/grey_color_background_shapes"
+            android:hint="@string/feb"
+            android:padding="7dp"
+            android:textColorHint="@color/colorBlack"
+            android:textCursorDrawable="@drawable/cursor_drawable"/>
+
+        <com.ebveneto.custom_views.CustomTextViewLight
+            style="@style/SmallBlueText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:text="@string/mar"
+            />
+
+        <EditText
+            android:id="@+id/etMar"
+            style="@style/SmallBlackText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/grey_color_background_shapes"
+            android:hint="@string/mar"
+            android:padding="7dp"
+            android:textColorHint="@color/colorBlack"
+            android:textCursorDrawable="@drawable/cursor_drawable"/>
+
+
+        <com.ebveneto.custom_views.CustomTextViewLight
+            style="@style/SmallBlueText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:text="@string/apr"
+            />
+
+        <EditText
+            android:id="@+id/etApr"
+            style="@style/SmallBlackText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/grey_color_background_shapes"
+            android:hint="@string/apr"
+            android:padding="7dp"
+            android:textColorHint="@color/colorBlack"
+            android:textCursorDrawable="@drawable/cursor_drawable"/>
+
+        <com.ebveneto.custom_views.CustomTextViewLight
+            style="@style/SmallBlueText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:text="@string/mag"
+            />
+
+        <EditText
+            android:id="@+id/etMay"
+            style="@style/SmallBlackText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/grey_color_background_shapes"
+            android:hint="@string/mag"
+            android:padding="7dp"
+            android:textColorHint="@color/colorBlack"
+            android:textCursorDrawable="@drawable/cursor_drawable"/>
+
+        <com.ebveneto.custom_views.CustomTextViewLight
+            style="@style/SmallBlueText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:text="@string/giu"
+            />
+
+        <EditText
+            android:id="@+id/etJun"
+            style="@style/SmallBlackText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/grey_color_background_shapes"
+            android:hint="@string/giu"
+            android:padding="7dp"
+            android:textColorHint="@color/colorBlack"
+            android:textCursorDrawable="@drawable/cursor_drawable"/>
+
+        <com.ebveneto.custom_views.CustomTextViewLight
+            style="@style/SmallBlueText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:text="@string/lug"
+            />
+
+        <EditText
+            android:id="@+id/etJul"
+            style="@style/SmallBlackText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/grey_color_background_shapes"
+            android:hint="@string/lug"
+            android:padding="7dp"
+            android:textColorHint="@color/colorBlack"
+            android:textCursorDrawable="@drawable/cursor_drawable"/>
+
+
+        <com.ebveneto.custom_views.CustomTextViewLight
+            style="@style/SmallBlueText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:text="@string/ago"
+            />
+
+        <EditText
+            android:id="@+id/etAug"
+            style="@style/SmallBlackText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/grey_color_background_shapes"
+            android:hint="@string/ago"
+            android:padding="7dp"
+            android:textColorHint="@color/colorBlack"
+            android:textCursorDrawable="@drawable/cursor_drawable"/>
+
+        <com.ebveneto.custom_views.CustomTextViewLight
+            style="@style/SmallBlueText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:text="@string/set"
+            />
+
+        <EditText
+            android:id="@+id/etSep"
+            style="@style/SmallBlackText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/grey_color_background_shapes"
+            android:hint="@string/set"
+            android:padding="7dp"
+            android:textColorHint="@color/colorBlack"
+            android:textCursorDrawable="@drawable/cursor_drawable"/>
+
+        <com.ebveneto.custom_views.CustomTextViewLight
+            style="@style/SmallBlueText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:text="@string/ott"
+            />
+
+        <EditText
+            android:id="@+id/etOct"
+            style="@style/SmallBlackText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/grey_color_background_shapes"
+            android:hint="@string/ott"
+            android:padding="7dp"
+            android:textColorHint="@color/colorBlack"
+            android:textCursorDrawable="@drawable/cursor_drawable"/>
+
+        <com.ebveneto.custom_views.CustomTextViewLight
+            style="@style/SmallBlueText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:text="@string/nov"
+            />
+
+        <EditText
+            android:id="@+id/etNov"
+            style="@style/SmallBlackText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/grey_color_background_shapes"
+            android:hint="@string/nov"
+            android:padding="7dp"
+            android:textColorHint="@color/colorBlack"
+            android:textCursorDrawable="@drawable/cursor_drawable"/>
+
+        <com.ebveneto.custom_views.CustomTextViewLight
+            style="@style/SmallBlueText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:text="@string/dic"
+            />
+
+        <EditText
+            android:id="@+id/etDec"
+            style="@style/SmallBlackText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/grey_color_background_shapes"
+            android:hint="@string/dic"
+            android:padding="7dp"
+            android:textColorHint="@color/colorBlack"
+            android:textCursorDrawable="@drawable/cursor_drawable"/>
+
+        <Button
+            android:id="@+id/btSave"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="15dp"
+            android:background="@drawable/blue_button_rounded_corners"
+            android:text="@string/salva"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/large_text_size"/>
+
+    </LinearLayout>
+
+</ScrollView>

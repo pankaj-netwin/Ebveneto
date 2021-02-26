@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    android:gravity="center"
+    android:orientation="vertical">
+
+
+    <com.ebveneto.custom_views.CustomTextViewBold xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/tvHome"
+        style="@style/MediumBlackText"
+        android:layout_width="match_parent"
+        android:layout_height="115dp"
+        android:layout_marginBottom="10dp"
+        android:background="@color/colorPrimary"
+        android:gravity="center"
+        android:paddingLeft="5dp"
+        android:paddingTop="15dp"
+        android:paddingRight="5dp"
+        android:paddingBottom="5dp"
+        android:text="IL TUO PROFILO"
+        android:textAllCaps="true"
+        android:textColor="@color/colorHomeTitleBlue"
+        android:textStyle="bold"
+        android:visibility="visible" />
+
+</LinearLayout>

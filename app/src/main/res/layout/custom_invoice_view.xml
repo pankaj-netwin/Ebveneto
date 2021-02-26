@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    android:orientation="horizontal">
+
+    <com.ebveneto.custom_views.CustomTextViewLight
+        android:id="@+id/tvInvoice"
+        style="@style/LargeBlackInvoiceText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="15dp"
+        android:text="@string/invoice_or_receipt" />
+
+    <Button
+        android:id="@+id/btnDynamicInvoice"
+        style="@style/CaricaCustomButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/blue_button_rounded_corners"
+        android:text="@string/carica"
+         />
+
+    <com.ebveneto.custom_views.CustomTextViewLight
+        android:id="@+id/tvFileSaveDynamic"
+        style="@style/CustomSaveFileText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/btnDynamicInvoice"
+        />
+
+    <View
+        android:id="@+id/view_invoice"
+        style="@style/HorizontalLine"
+        android:layout_below="@+id/btnDynamicInvoice"
+        android:layout_marginTop="25dp"
+        />
+
+</RelativeLayout>

@@ -1,0 +1,432 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    android:orientation="vertical">
+
+    <com.ebveneto.custom_views.CustomTextViewBold
+        android:id="@+id/tvServiceName"
+        style="@style/LargeBlueText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorGreyFaint"
+        android:paddingLeft="15dp"
+        android:paddingTop="3dp"
+        android:paddingRight="10dp"
+        android:paddingBottom="3dp"
+        android:textColor="@color/colorPrimary"
+        tools:text="asdasdasdsdsdasd" />
+
+    <LinearLayout
+        android:id="@+id/llCurrentYear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingLeft="15dp"
+            android:paddingRight="10dp"
+            android:weightSum="10">
+
+
+            <com.ebveneto.custom_views.CustomTextViewLight
+                android:id="@+id/tvFirst"
+                style="@style/SmallBlackText"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="5"
+                android:paddingTop="3dp"
+                android:paddingBottom="3dp"
+                android:text="Data richiesta" />
+
+            <com.ebveneto.custom_views.CustomTextViewLight
+                android:id="@+id/tvSecond"
+                style="@style/SmallBlackText"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="5"
+                android:paddingTop="3dp"
+                android:paddingBottom="3dp"
+                android:text="Stato" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingLeft="15dp"
+            android:paddingRight="10dp"
+            android:weightSum="10">
+
+
+            <com.ebveneto.custom_views.CustomTextViewBold
+                android:id="@+id/tvRequestedDate"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="70dp"
+                android:layout_weight="5"
+                android:paddingTop="3dp"
+                android:paddingBottom="3dp"
+                android:textColor="@color/colorBlack"
+                android:textStyle="bold"
+                tools:text="1/1/2222" />
+
+            <com.ebveneto.custom_views.CustomTextViewBold
+                android:id="@+id/tvStato"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="70dp"
+                android:layout_weight="5"
+                android:paddingTop="3dp"
+                android:paddingBottom="3dp"
+                android:textColor="@color/colorBlack"
+                android:textStyle="bold"
+                tools:text="1" />
+        </LinearLayout>
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+            android:paddingLeft="15dp"
+            android:paddingRight="10dp"
+            android:weightSum="10">
+
+
+            <com.ebveneto.custom_views.CustomTextViewLight
+                style="@style/SmallBlackText"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="5"
+                android:paddingTop="3dp"
+                android:paddingBottom="3dp"
+                android:text="Data ultima integrazione" />
+
+            <com.ebveneto.custom_views.CustomTextViewLight
+                style="@style/SmallBlackText"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="5"
+                android:paddingTop="3dp"
+                android:paddingBottom="3dp"
+                android:text="Data Pagamento" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingLeft="15dp"
+            android:paddingRight="10dp"
+            android:weightSum="10">
+
+
+            <com.ebveneto.custom_views.CustomTextViewBold
+                android:id="@+id/tvLastDateOfIntegration"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="70dp"
+                android:layout_weight="5"
+                android:paddingTop="3dp"
+                android:paddingBottom="3dp"
+                android:textColor="@color/colorBlack"
+                android:textStyle="bold"
+                tools:text="1/1/2222" />
+
+            <com.ebveneto.custom_views.CustomTextViewBold
+                android:id="@+id/tvDatePayment"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="70dp"
+                android:layout_weight="5"
+                android:paddingTop="3dp"
+                android:paddingBottom="3dp"
+                android:textColor="@color/colorBlack"
+                android:textStyle="bold"
+                tools:text="1" />
+        </LinearLayout>
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+            android:paddingLeft="15dp"
+            android:paddingRight="10dp"
+            android:weightSum="10">
+
+
+            <com.ebveneto.custom_views.CustomTextViewLight
+                style="@style/SmallBlackText"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="5"
+                android:paddingTop="3dp"
+                android:paddingBottom="3dp"
+                android:text="Tempistica di pagamento" />
+
+            <com.ebveneto.custom_views.CustomTextViewLight
+                style="@style/SmallBlackText"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="5"
+                android:paddingTop="3dp"
+                android:paddingBottom="3dp"
+                android:text="Importo" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingLeft="15dp"
+            android:paddingRight="10dp"
+            android:weightSum="10">
+
+            <com.ebveneto.custom_views.CustomTextViewLight
+                android:id="@+id/tvPaymentTiming"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="70dp"
+                android:layout_weight="5"
+                android:paddingTop="3dp"
+                android:paddingBottom="3dp"
+                android:textColor="@color/colorBlack"
+                tools:text="" />
+
+            <com.ebveneto.custom_views.CustomTextViewBold
+                android:id="@+id/tvAmounnt"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="70dp"
+                android:layout_weight="5"
+                android:paddingTop="3dp"
+                android:paddingBottom="3dp"
+                android:text="0.00 €"
+                android:textColor="@color/colorRed"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingLeft="15dp"
+            android:paddingRight="10dp"
+            android:weightSum="10">
+
+            <com.ebveneto.custom_views.CustomTextViewLight
+                android:id="@+id/tvNoteFiled"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="70dp"
+                android:layout_weight="5"
+                android:paddingTop="3dp"
+                android:paddingBottom="3dp"
+                android:text="Note"
+                android:textColor="@color/colorBlack"
+                tools:text="Note" />
+
+            <com.ebveneto.custom_views.CustomTextViewBold
+                android:id="@+id/noteFieldValue"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="70dp"
+                android:layout_weight="5"
+                android:paddingTop="3dp"
+                android:paddingBottom="3dp"
+                android:text="note"
+                android:textColor="@color/colorBlack"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingLeft="15dp"
+            android:paddingRight="10dp"
+            android:weightSum="10">
+
+            <Button
+                android:id="@+id/btnInvia"
+                android:layout_width="10dp"
+                android:layout_height="40dp"
+                android:layout_weight="5"
+                android:background="@drawable/round_corner_button"
+                android:text="Invia integrazioni"
+                android:textAllCaps="false"
+                android:textColor="@color/colorBlack"
+                android:visibility="gone" />
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llAllYears"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingLeft="15dp"
+            android:paddingRight="10dp"
+            android:weightSum="10">
+
+
+            <com.ebveneto.custom_views.CustomTextViewLight
+                style="@style/SmallBlackText"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="5"
+                android:paddingTop="3dp"
+                android:paddingBottom="3dp"
+                android:text="@string/numero_richieste" />
+
+            <com.ebveneto.custom_views.CustomTextViewLight
+
+                style="@style/SmallBlackText"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="5"
+                android:paddingTop="3dp"
+                android:paddingBottom="3dp"
+                android:text="@string/numero_erogazioni" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingLeft="15dp"
+            android:paddingRight="10dp"
+            android:weightSum="10">
+
+
+            <com.ebveneto.custom_views.CustomTextViewBold
+                android:id="@+id/tvNrTot"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="70dp"
+                android:layout_weight="5"
+                android:paddingTop="3dp"
+                android:paddingBottom="3dp"
+                android:textColor="@color/colorBlack"
+                android:textStyle="bold"
+                tools:text="1" />
+
+            <com.ebveneto.custom_views.CustomTextViewBold
+                android:id="@+id/tvNrPagato"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="70dp"
+                android:layout_weight="5"
+                android:paddingTop="3dp"
+
+                android:paddingBottom="3dp"
+                android:textColor="@color/colorBlack"
+                android:textStyle="bold"
+                tools:text="1" />
+        </LinearLayout>
+
+        <com.ebveneto.custom_views.CustomTextViewLight
+            style="@style/SmallBlackText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:paddingLeft="15dp"
+            android:paddingTop="3dp"
+            android:paddingRight="10dp"
+            android:paddingBottom="3dp"
+            android:text="Importo totale" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingLeft="15dp"
+            android:paddingRight="10dp"
+            android:weightSum="10">
+
+
+            <com.ebveneto.custom_views.CustomTextViewBold
+                android:id="@+id/tvTotPagato"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="70dp"
+                android:layout_weight="5"
+                android:paddingTop="3dp"
+                android:paddingBottom="3dp"
+                android:text="0.00 €"
+                android:textColor="@color/colorRed"
+                android:textStyle="bold" />
+
+            <com.ebveneto.custom_views.CustomTextViewLight
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="70dp"
+                android:layout_weight="5"
+                android:paddingTop="3dp"
+                android:paddingBottom="3dp"
+                android:textColor="@color/colorBlack" />
+
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/rlTotal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@color/colorGrey"
+            android:padding="10dp"
+
+            android:paddingLeft="20dp">
+
+            <com.ebveneto.custom_views.CustomTextViewBold
+                android:id="@+id/tvTotal"
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/rounded_whitebg_border"
+                android:padding="5dp"
+                android:textColor="@color/colorRed"
+                android:textStyle="bold"
+                tools:text="2344" />
+
+            <com.ebveneto.custom_views.CustomTextViewLight
+                style="@style/SmallBlackText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:layout_toLeftOf="@+id/tvTotal"
+                android:padding="5dp"
+                android:text="totale"
+                android:textColor="@color/colorBlack" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,337 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_my_profile_activty"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    android:orientation="vertical"
+    tools:context="com.ebveneto.activities.MyProfileActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <com.ebveneto.custom_views.CustomTextViewBold
+            style="@style/LargeBlueText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="25dp"
+            android:text="@string/my_profile" />
+
+
+        <LinearLayout
+            android:id="@+id/llParentLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/llNome"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal">
+
+                <com.ebveneto.custom_views.CustomTextViewLight
+                    android:id="@+id/tvNomeOrRegion"
+                    style="@style/LargeBlackMyProfileText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/name" />
+
+                <com.ebveneto.custom_views.CustomTextViewLight
+                    android:id="@+id/tvNome"
+                    style="@style/LargeBlueMyProfileText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="right" />
+
+            </LinearLayout>
+
+            <View style="@style/HorizontalLine" />
+
+            <LinearLayout
+                android:id="@+id/llCognome"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:orientation="horizontal">
+
+                <com.ebveneto.custom_views.CustomTextViewLight
+                    android:id="@+id/tvCognomeOrPatrita"
+                    style="@style/LargeBlackMyProfileText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/surname" />
+
+                <com.ebveneto.custom_views.CustomTextViewLight
+                    android:id="@+id/tvCognome"
+                    style="@style/LargeBlueMyProfileText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="right" />
+
+            </LinearLayout>
+
+            <View style="@style/HorizontalLine" />
+
+            <LinearLayout
+                android:id="@+id/llCodFisale"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:orientation="horizontal">
+
+                <com.ebveneto.custom_views.CustomTextViewLight
+                    style="@style/LargeBlackMyProfileText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/tax_code" />
+
+                <com.ebveneto.custom_views.CustomTextViewLight
+                    android:id="@+id/tvCof"
+                    style="@style/LargeBlueMyProfileText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="right" />
+
+            </LinearLayout>
+
+            <View style="@style/HorizontalLine" />
+
+            <LinearLayout
+                android:id="@+id/llDataDiNascita"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:orientation="horizontal">
+
+                <com.ebveneto.custom_views.CustomTextViewLight
+                    style="@style/LargeBlackMyProfileText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/date_of_birth" />
+
+                <com.ebveneto.custom_views.CustomTextViewLight
+                    android:id="@+id/tvDatadiNascita"
+                    style="@style/LargeBlueMyProfileText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:inputType="date" />
+
+            </LinearLayout>
+
+            <View style="@style/HorizontalLine" />
+
+            <LinearLayout
+                android:id="@+id/llIndirizzo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:orientation="horizontal">
+
+                <com.ebveneto.custom_views.CustomTextViewLight
+                    style="@style/LargeBlackMyProfileText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/address" />
+
+                <com.ebveneto.custom_views.CustomTextViewLight
+                    android:id="@+id/tvIndirizzo"
+                    style="@style/LargeBlueMyProfileText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="right" />
+
+            </LinearLayout>
+
+            <View style="@style/HorizontalLine" />
+
+            <LinearLayout
+                android:id="@+id/llCitta"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:orientation="horizontal">
+
+                <com.ebveneto.custom_views.CustomTextViewLight
+                    style="@style/LargeBlackMyProfileText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/city" />
+
+                <com.ebveneto.custom_views.CustomTextViewLight
+                    android:id="@+id/tvCitta"
+                    style="@style/LargeBlueMyProfileText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="right" />
+
+            </LinearLayout>
+
+            <View style="@style/HorizontalLine" />
+
+            <LinearLayout
+                android:id="@+id/llProvincia"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:orientation="horizontal">
+
+                <com.ebveneto.custom_views.CustomTextViewLight
+                    style="@style/LargeBlackMyProfileText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/provision" />
+
+                <com.ebveneto.custom_views.CustomTextViewLight
+                    android:id="@+id/tvProvincia"
+                    style="@style/LargeBlueMyProfileText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="right" />
+
+            </LinearLayout>
+
+            <View style="@style/HorizontalLine" />
+
+            <LinearLayout
+                android:id="@+id/llInorderWithPayment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:orientation="horizontal">
+
+                <com.ebveneto.custom_views.CustomTextViewLight
+                    style="@style/LargeBlackMyProfileText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:text="@string/in_order_with_payments" />
+
+                <com.ebveneto.custom_views.CustomTextViewLight
+                    android:id="@+id/tvInRegolaCon"
+                    style="@style/LargeBlueMyProfileText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:textColor="@color/colorRed" />
+
+            </LinearLayout>
+
+            <View style="@style/HorizontalLine" />
+
+            <LinearLayout
+                android:id="@+id/llCurrentlyEmployed"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:orientation="vertical">
+
+                <com.ebveneto.custom_views.CustomTextViewBold
+                    style="@style/LargeBlackMyProfileText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/currently_emplyoed" />
+
+                <com.ebveneto.custom_views.CustomTextViewLight
+                    android:id="@+id/tvCurrentlyEmplyoed"
+                    style="@style/CustomLargeBlackMyProfileText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                   />
+
+
+            </LinearLayout>
+
+            <View style="@style/HorizontalLine" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/llAddNewService"
+            style="@style/CustomProfileButton"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/blue_button_rounded_corners">
+
+            <com.ebveneto.custom_views.CustomTextViewBold
+                style="@style/LargeBlackText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@mipmap/plusblack"
+                android:gravity="center"
+                android:text="@string/add_new_services"
+                android:textAllCaps="true" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/llModificaDati"
+            style="@style/CustomProfileButton"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/blue_button_rounded_corners">
+
+            <com.ebveneto.custom_views.CustomTextViewBold
+                style="@style/LargeBlackText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:drawableLeft="@mipmap/edit"
+                android:text="@string/modifica_i_dati"
+                android:textAllCaps="true" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/llChangePassword"
+            style="@style/CustomProfileButton"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="50dp"
+            android:background="@drawable/blue_button_rounded_corners">
+
+            <com.ebveneto.custom_views.CustomTextViewBold
+                style="@style/LargeBlackText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@mipmap/password"
+                android:gravity="center"
+                android:text="@string/cambia_la_password"
+                android:textAllCaps="true" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</ScrollView>

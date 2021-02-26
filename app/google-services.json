@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "143402539938",
+    "firebase_url": "https://ebveneto-28093.firebaseio.com",
+    "project_id": "ebveneto-28093",
+    "storage_bucket": "ebveneto-28093.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:143402539938:android:81b5912f025216be",
+        "android_client_info": {
+          "package_name": "com.ebveneto"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "143402539938-api9rpqj82rsoc94ql7ckd2ate42a2mu.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB_1s1KNseU1Tj2V3V2EiKV_9LgMD8VySk"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

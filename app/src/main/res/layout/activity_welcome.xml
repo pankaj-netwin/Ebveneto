@@ -1,0 +1,376 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:id="@+id/activity_welcome"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/colorWhite"
+              android:orientation="vertical"
+              tools:context="com.ebveneto.activities.WelcomeActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/ivEbvLogo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="30dp"
+                android:contentDescription="@null"
+                android:src="@drawable/applogonew"/>
+
+            <com.ebveneto.custom_views.CustomLogoTextView
+                style="@style/MediumBlackText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/ente_bilaterale"
+                android:textStyle="bold"
+                android:visibility="gone"/>
+
+            <com.ebveneto.custom_views.CustomTextViewLight
+                android:id="@+id/tvWelcomeText"
+                style="@style/LargeBlackText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:gravity="center"
+                android:padding="10dp"/>
+
+            <LinearLayout
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@+id/btnVerifyData"
+                    style="@style/CustomWelcomeButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="20dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/blue_button_rounded_corners"
+                    android:text="@string/verify_your_information"/>
+
+                <Button
+                    android:id="@+id/btnAddNewServices"
+                    style="@style/CustomWelcomeButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:background="@drawable/blue_button_rounded_corners"
+                    android:text="@string/request_a_new_service"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llDipendenti"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <!--row 1 -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:weightSum="10"
+                    android:orientation="horizontal">
+
+                    <!--Single item -->
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_weight="5"
+                        android:id="@+id/llLeft"
+
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="5dp"
+                        android:paddingBottom="5dp"
+
+                        android:gravity="center_horizontal"
+                        android:orientation="vertical"
+                       >
+
+                        <!--<ImageView android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+
+                            android:src="@mipmap/profile"/>
+
+                        <com.ebveneto.custom_views.CustomLogoTextView
+                            style="@style/MediumBlackText"
+                            android:textColor="@color/colorHomeTitleBlue"
+                            android:layout_marginTop="10dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="IL TUO PROFILO"
+                            android:textStyle="bold"
+                            android:visibility="visible"/>-->
+
+                    </LinearLayout>
+
+                    <!--Single item -->
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_weight="5"
+                        android:id="@+id/llRight"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="10dp"
+                        android:paddingBottom="5dp"
+                        android:gravity="center_horizontal"
+                        android:orientation="vertical"
+                       >
+
+                       <!-- <ImageView android:layout_width="wrap_content"
+                                   android:layout_height="wrap_content"
+                                   android:layout_gravity="center"
+
+                                   android:src="@mipmap/profile"/>
+
+                        <com.ebveneto.custom_views.CustomLogoTextView
+                            style="@style/MediumBlackText"
+                            android:textColor="@color/colorHomeTitleBlue"
+                            android:layout_marginTop="10dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="IL TUO PROFILO"
+                            android:textStyle="bold"
+                            android:visibility="visible"/>-->
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+               <!-- &lt;!&ndash;row 2 &ndash;&gt;
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:weightSum="10"
+                    android:orientation="horizontal">
+
+                    &lt;!&ndash;Single item &ndash;&gt;
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_weight="5"
+                        android:layout_margin="20dp"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        android:gravity="center_horizontal"
+                        android:orientation="vertical"
+                        android:background="@color/colorPrimary">
+
+                        <ImageView android:layout_width="wrap_content"
+                                   android:layout_height="wrap_content"
+                                   android:layout_gravity="center"
+
+                                   android:src="@mipmap/profile"/>
+
+                        <com.ebveneto.custom_views.CustomLogoTextView
+                            style="@style/MediumBlackText"
+                            android:textColor="@color/colorHomeTitleBlue"
+                            android:layout_marginTop="10dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="IL TUO PROFILO"
+                            android:textStyle="bold"
+                            android:visibility="visible"/>
+
+                    </LinearLayout>
+
+                    &lt;!&ndash;Single item &ndash;&gt;
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_weight="5"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        android:layout_margin="20dp"
+                        android:gravity="center_horizontal"
+                        android:orientation="vertical"
+                        android:background="@color/colorPrimary">
+
+                        <ImageView android:layout_width="wrap_content"
+                                   android:layout_height="wrap_content"
+                                   android:layout_gravity="center"
+
+                                   android:src="@mipmap/profile"/>
+
+                        <com.ebveneto.custom_views.CustomLogoTextView
+                            style="@style/MediumBlackText"
+                            android:textColor="@color/colorHomeTitleBlue"
+                            android:layout_marginTop="10dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="IL TUO PROFILO"
+                            android:textStyle="bold"
+                            android:visibility="visible"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                &lt;!&ndash;row 3 &ndash;&gt;
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:weightSum="10"
+                    android:orientation="horizontal">
+
+                    &lt;!&ndash;Single item &ndash;&gt;
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_weight="5"
+                        android:layout_margin="20dp"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        android:gravity="center_horizontal"
+                        android:orientation="vertical"
+                        android:background="@color/colorPrimary">
+
+                        <ImageView android:layout_width="wrap_content"
+                                   android:layout_height="wrap_content"
+                                   android:layout_gravity="center"
+
+                                   android:src="@mipmap/profile"/>
+
+                        <com.ebveneto.custom_views.CustomLogoTextView
+                            style="@style/MediumBlackText"
+                            android:textColor="@color/colorHomeTitleBlue"
+                            android:layout_marginTop="10dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="IL TUO PROFILO"
+                            android:textStyle="bold"
+                            android:visibility="visible"/>
+
+                    </LinearLayout>
+
+                    &lt;!&ndash;Single item &ndash;&gt;
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_weight="5"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        android:layout_margin="20dp"
+                        android:gravity="center_horizontal"
+                        android:orientation="vertical"
+                        android:background="@color/colorPrimary">
+
+                        <ImageView android:layout_width="wrap_content"
+                                   android:layout_height="wrap_content"
+                                   android:layout_gravity="center"
+
+                                   android:src="@mipmap/profile"/>
+
+                        <com.ebveneto.custom_views.CustomLogoTextView
+                            style="@style/MediumBlackText"
+                            android:textColor="@color/colorHomeTitleBlue"
+                            android:layout_marginTop="10dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="IL TUO PROFILO"
+                            android:textStyle="bold"
+                            android:visibility="visible"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                &lt;!&ndash;row 1 &ndash;&gt;
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:weightSum="10"
+                    android:orientation="horizontal">
+
+                    &lt;!&ndash;Single item &ndash;&gt;
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_weight="5"
+                        android:layout_margin="20dp"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        android:gravity="center_horizontal"
+                        android:orientation="vertical"
+                        android:background="@color/colorPrimary">
+
+                        <ImageView android:layout_width="wrap_content"
+                                   android:layout_height="wrap_content"
+                                   android:layout_gravity="center"
+
+                                   android:src="@mipmap/profile"/>
+
+                        <com.ebveneto.custom_views.CustomLogoTextView
+                            style="@style/MediumBlackText"
+                            android:textColor="@color/colorHomeTitleBlue"
+                            android:layout_marginTop="10dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="IL TUO PROFILO"
+                            android:textStyle="bold"
+                            android:visibility="visible"/>
+
+                    </LinearLayout>
+
+                    &lt;!&ndash;Single item &ndash;&gt;
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_weight="5"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        android:layout_margin="20dp"
+                        android:gravity="center_horizontal"
+                        android:orientation="vertical"
+                        android:background="@color/colorPrimary">
+
+                        <ImageView android:layout_width="wrap_content"
+                                   android:layout_height="wrap_content"
+                                   android:layout_gravity="center"
+
+                                   android:src="@mipmap/profile"/>
+
+                        <com.ebveneto.custom_views.CustomLogoTextView
+                            style="@style/MediumBlackText"
+                            android:textColor="@color/colorHomeTitleBlue"
+                            android:layout_marginTop="10dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="IL TUO PROFILO"
+                            android:textStyle="bold"
+                            android:visibility="visible"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>-->
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    android:orientation="vertical"
+    tools:context="com.ebveneto.activities.RequestedServicesActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        android:weightSum="10">
+
+        <com.ebveneto.custom_views.CustomTextViewBold
+            android:id="@+id/tvSommeLabel"
+            style="@style/SmallBlackText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="7"
+            android:text="@string/somme_percepite_nell_anno_year"/>
+
+        <com.ebveneto.custom_views.CustomTextViewLight
+            android:id="@+id/tvSomme"
+            style="@style/SmallBlackText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:gravity="right"
+            android:text="-"/>
+    </LinearLayout>
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        android:weightSum="10">
+
+        <com.ebveneto.custom_views.CustomTextViewBold
+            android:id="@+id/tvBudgetLabel"
+            style="@style/SmallBlackText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="7"
+            android:text="@string/budget_residuo_per_l_anno_year"/>
+
+        <com.ebveneto.custom_views.CustomTextViewLight
+            android:id="@+id/tvBudget"
+            style="@style/SmallBlackText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:gravity="right"
+            android:text="-"/>
+
+    </LinearLayout>
+
+    <RadioGroup
+        android:id="@+id/rgUser"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <RadioButton
+            android:id="@+id/rbCompany"
+            style="@style/ButtonSelector"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="@string/servizi_aziendali"
+            />
+
+        <RadioButton
+            android:id="@+id/rbEmployee"
+            style="@style/ButtonSelector"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="@string/resoconto_dipendenti"/>
+
+    </RadioGroup>
+
+    <se.emilsjolander.stickylistheaders.StickyListHeadersListView
+        android:id="@+id/stickyList"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        />
+
+    <com.ebveneto.custom_views.CustomTextViewBold
+        android:id="@+id/tvEmpty"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical|center_horizontal|center"
+        android:text="@string/nessun_record_trovato"
+        android:textColor="@color/colorBlack"
+        android:visibility="gone"/>
+
+</LinearLayout>
